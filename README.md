@@ -52,8 +52,8 @@
  and use the psql client software that is already installed in the database container.
 
 ```
- $ docker-compose run database bash # drop into the container shell
-   database# psql --host=database --username=postgresql_user  --dbname=employee_database
+ $ `docker-compose run database bash` # drop into the container shell
+   database# `psql --host=database --username=postgresql_user  --dbname=employee_database`
    Password for user unicorn_user: 
    psql (12.0 (Debian 12.0-2.pgdg100+1))
    Type "help" for help.
