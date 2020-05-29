@@ -50,6 +50,6 @@ INSERT INTO public.employee(
 
                email_address, first_name, last_name)
 
-               VALUES ('ankit_lawaniya@optum.com', 'Ankit', 'Lawaniya');
+               VALUES ('example@gmail.com', 'rohit', 'sharma');
 
  
