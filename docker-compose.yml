@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+  database:
+    image: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+   #  - database-data:/var/lib/postgresql/data
+      - ./dumps/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:    
+      POSTGRES_USER: postgresql_user
+      POSTGRES_PASSWORD: postgresql_password
+      POSTGRES_DB: employee_database
+volumes:
+    dumps:     
+        # database-data: 
+    # named volumes can be managed easier using docker-compose
